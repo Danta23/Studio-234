@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Dark{
+    --bg: #1f1f1f;
+    --text: #fff;
+    --hover: #292929;
+    --gradient: linear-gradient(to bottom, #303030, #161616);
+}
+
+.Light{
+    --bg: #d1d1d1;
+    --text: #000;
+    --hover: #b9b9b9;
+    --gradient: linear-gradient(to bottom, #e6e6e6, #c0c0c0);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    position: relative;
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--bg);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--text);
+}
+
+main{
+    flex: 1;
+    height: 100vh;
+    margin-left: 5rem;
+    padding: 1rem;
+    z-index: 1;
+    background: var(--gradient);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+main img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--text);
+    border-radius: 15px;
+}
+
+main h1{
+    text-align: center;
+}
+
+main p{
+    font-weight: 500;
+}
+
+main hr{
+    border: none;
+    border: 1px solid var(--text);
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.Navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--bg);
+    transition: width 200ms ease;
+}
+
+.Navbar-Nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.Nav-Item{
+    width: 75%;
+    border-radius: 15px;
+}
+
+.Nav-Item:hover{
+    background-color: var(--hover);
+}
+
+.Nav-Item:last-child{
+    margin-top: auto;
+}
+
+.Nav-Link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.Link-Text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.Nav-Item i{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.Logo{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text);
+    font-size: 1rem;
+    letter-spacing: 0.3ch;
+    width: 75%;
+}
+
+.Logo img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 9px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Navbar:hover{
+    width: 16rem;
+}
+
+.Navbar:hover .Link-Text{
+    display: block;
+}
+
+.Navbar:hover .Logo img{
+    pointer-events: none;
+    opacity: 1;
+}
+
+.Navbar .Logo i{
+    color: var(--text);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Navbar:hover .Logo i{
+    left: 90%;
+    opacity: 0;
+}
+
+.social-media-buttons{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-media-buttons h3{
+    margin-bottom: 10px;
+}
+
+.social-media-buttons a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: var(--bg);
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.social-media-buttons a:hover{
+    background-color: var(--hover);
+}
+
+.social-media-buttons a i{
+    width: 45px;
+    height: 45px;
+    font-size: 45px;
+    color: var(--text);
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: baseline;
+    padding: 0;
+    gap: 10px;
+}
+  
+.categories button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: var(--text);
+    background-color: var(--bg);
+    cursor: pointer;
+    border-radius: 9px;
+}
+  
+.categories button:hover{
+    background-color: var(--hover);
+}
+
+.categories button.active{
+    background-color: var(--hover);
+    border: 1px solid var(--text);
+}
+
+.game-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid var(--text);
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+}
+
+.game-card img{
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.game-details{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.game-details h2{
+    font-weight: bold;
+    color: var(--text);
+}
+
+.game-details p{
+    font-weight: 500;
+    color: var(--text);
+}
+
+.play-button{
+    background-color: var(--bg);
+    color: var(--text);
+    border: none;
+    border-radius: 9px;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-right: 5rem;
+}
+
+.play-button:hover{
+    background-color: var(--hover);
+}
+
+.video-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+}
+
+.video{
+    position: relative;
+    width: 550px;
+    height: 309px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.code-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.code-blocks{
+    padding: 10px;
+    border: 1px solid var(--text);
+    border-radius: 9px;
+    flex: 1 1 calc(50% - 10px);
+    max-width: 100%;
+}
+
+pre code{
+    white-space: pre-wrap;
+    overflow-x: auto;
+    border-radius: 9px;
+}
+
+.copy-button{
+    position: relative;
+    background-color: var(--bg);
+    color: var(--text);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.copy-button:hover{
+    background-color: var(--hover);
+}
+
+.music-player{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls button{
+    background-color: var(--bg);
+    color: var(--text);
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.controls button:hover{
+    background-color: var(--hover);
+}
+
+.progress-bar{
+    height: 4px;
+    background-color: var(--hover);
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: var(--text);
+}
+
+.main-container{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.image-container{
+    text-align: center;
+    margin: 20px;
+    width: 550px;
+    height: 309px;
+}
+
+.image-container img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--text);
+    border-radius: 9px;
+}
+
+.image-container p{
+    color: var(--text);
+    margin-top: 10px;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--bg);
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+}
+
+footer h2{
+    color: var(--text);
+    font-weight: 700;
+    font-size: 14px;
+}

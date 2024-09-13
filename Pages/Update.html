@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../Assets/Ikon Baru Studio 234.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio 234</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="Dark">
+    <nav class="Navbar">
+        <ul class="Navbar-Nav">
+            <li class="Logo">
+                <a href="../index.html" class="Nav-Link">
+                    <img src="../Assets/Ikon Baru Studio 234.png" alt="Logo">
+                    <span class="Link-Text">Studio 234</span>
+                    <i class='bx bx-menu'></i>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="../index.html" class="Nav-Link">
+                    <i class='bx bx-home'></i>
+                    <span class="Link-Text">Home</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="Project.html" class="Nav-Link">
+                    <i class='bx bx-folder'></i>
+                    <span class="Link-Text">Project</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="Update.html" class="Nav-Link">
+                    <i class='bx bx-refresh'></i>
+                    <span class="Link-Text">Update</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="News.html" class="Nav-Link">
+                    <i class='bx bx-news'></i>
+                    <span class="Link-Text">News</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="#" class="Nav-Link">
+                    <i class='bx bx-sun'></i>
+                    <span class="Link-Text">Theme</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <img src="https://www.stsci.edu/files/live/sites/www/files/home/hst/_images/Westerlund2-Cropped-001.jpg?t=tn2400" alt="Update">
+        <hr>
+        <h1>Update!</h1>
+        <hr>
+        <div class="categories">
+            <h3>Categories</h3>
+            <button class="active category-button" onclick="filterSelection('all')"><i class='bx bx-list-ul'></i> All</button>
+            <button class="category-button" onclick="filterSelection('release')"><i class='bx bx-cake'></i> Release</button>
+            <button class="category-button" onclick="filterSelection('prer')"><i class='bx bx-party'></i> Pre-release</button>
+            <button class="category-button" onclick="filterSelection('beta')"><i class='bx bxs-folder-open'></i> Beta</button>
+            <button class="category-button" onclick="filterSelection('preb')"><i class='bx bxs-folder'></i> Pre-beta</button>
+            <button class="category-button" onclick="filterSelection('alpha')"><i class='bx bx-notepad'></i> Alpha</button>
+            <button class="category-button" onclick="filterSelection('prea')"><i class='bx bx-note'></i> Pre-alpha</button>
+            <button class="category-button" onclick="filterSelection('prototype')"><i class='bx bx-test-tube'></i> Prototype</button>
+            <button class="category-button" onclick="filterSelection('dev')"><i class='bx bxs-key'></i> Development (Dev)</button>
+        </div>
+        <hr>
+        <div class="category-list">
+            <div class="category-item release">
+                <h1>Release!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/xrS9Uo3vYsQ?si=ho_6H2aD2PhcfwgC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/IkWoCn6YKak?si=TTutKw097CR53zsN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item prer">
+                <h1>Pre-release!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Y_YAztpP10k?si=PfKpQQiDnDoXNdwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item beta">
+                <h1>Beta!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/S628tW5rQBg?si=R7R1bCZGsYzv378_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item preb">
+                <h1>Pre-beta!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/tSK6rFyoSdI?si=cyxWWiDJ8A6DnaEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item alpha">
+                <h1>Alpha!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/2nZZn9Tjjbc?si=XTDDpqp4BmvEtT8i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/SJx5nSP6VSM?si=9xACk0I1Eu5RKl5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item prea">
+                <h1>Pre-alpha!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/g5NZ4RnFXYQ?si=xXUxxKg5WvJlsg_v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item prototype">
+                <h1>Prototype!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/kndF802NokE?si=ZuvGGgp4Exz6FNw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item dev">
+                <h1>Development (Dev)!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/mysSiC9mDWk?si=k2geTDL5Sc3Sth_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/59lIy70xCA0?si=PKFz4safw5oK8bIv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <hr>
+        <hr>
+    </main>
+    <footer>
+        <h2>Studio 234 © 2021-2024</h2>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

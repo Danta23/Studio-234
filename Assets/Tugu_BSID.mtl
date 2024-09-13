@@ -1,0 +1,36 @@
+newmtl MeshestuguBsidcube11Mtl
+Material Color
+Ka 0.124741 0.113921 0.121986
+Kd 0.124741 0.113921 0.121986
+Ks 0.109087 0.099625 0.106678 
+
+d 1
+
+Ns 0
+
+map_Ka MeshestuguBsidcube11_diff.png
+map_Kd MeshestuguBsidcube11_diff.png
+map_d MeshestuguBsidcube11_diff.png
+
+map_Bump MeshestuguBsidcube11_nmap.png
+
+map_Ns MeshestuguBsidcube11_spec.png
+
+newmtl Uni00721Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.32673 0.322336 0.335615 
+
+d 1
+
+Ns 0
+
+map_Ka MeshestuguBsidcube11_diff.png
+map_Kd MeshestuguBsidcube11_diff.png
+map_d MeshestuguBsidcube11_diff.png
+
+map_Bump MeshestuguBsidcube11_nmap.png
+
+map_Ns MeshestuguBsidcube11_spec.png
+

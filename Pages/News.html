@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../Assets/Ikon Baru Studio 234.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio 234</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="Dark">
+    <nav class="Navbar">
+        <ul class="Navbar-Nav">
+            <li class="Logo">
+                <a href="../index.html" class="Nav-Link">
+                    <img src="../Assets/Ikon Baru Studio 234.png" alt="Logo">
+                    <span class="Link-Text">Studio 234</span>
+                    <i class='bx bx-menu'></i>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="../index.html" class="Nav-Link">
+                    <i class='bx bx-home'></i>
+                    <span class="Link-Text">Home</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="Project.html" class="Nav-Link">
+                    <i class='bx bx-folder'></i>
+                    <span class="Link-Text">Project</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="Update.html" class="Nav-Link">
+                    <i class='bx bx-refresh'></i>
+                    <span class="Link-Text">Update</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="News.html" class="Nav-Link">
+                    <i class='bx bx-news'></i>
+                    <span class="Link-Text">News</span>
+                </a>
+            </li>
+            <li class="Nav-Item">
+                <a href="#" class="Nav-Link">
+                    <i class='bx bx-sun'></i>
+                    <span class="Link-Text">Theme</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <img src="https://scr.templatemonster.com/279400/279488-original.jpg" alt="News">
+        <hr>
+        <h1>News!</h1>
+        <hr>
+        <div class="categories">
+            <h3>Categories</h3>
+            <button class="active category-button" onclick="filterSelection('all')"><i class='bx bx-list-ul'></i> All</button>
+            <button class="category-button" onclick="filterSelection('announcement')"><i class='bx bx-joystick'></i> Announcement</button>
+            <button class="category-button" onclick="filterSelection('screen')"><i class='bx bxs-music'></i> Splash Screen</button>
+            <button class="category-button" onclick="filterSelection('community')"><i class='bx bxs-music'></i> Community</button>
+        </div>
+        <hr>
+        <div class="category-list">
+            <div class="category-item announcement">
+                <h1>Announcement!</h1>
+                <hr>
+                <div class="video-container">
+                    <hr>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/0QqsgKPDfKE?si=t0vtdYv5XIM-T_09" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <hr>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item screen">
+                <h1>Splash Screen!</h1>
+                <hr>
+                <div class="main-container">
+                    <div class="image-container">
+                        <img src="../Assets/Studio 234 Logo.png" alt="Screen 1">
+                        <hr>
+                        <p>2021 - 2023 Studio 234 Old Logo</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="../Assets/Studio 234 Splash Screen.png" alt="Screen 2">
+                        <hr>
+                        <p>2023 - 2024 Studio 234 Logo</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="../Assets/Studio 234 New Splash Screen.png" alt="Screen 3">
+                        <hr>
+                        <p>2024 Studio 234 New Logo</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="category-item community">
+                <div class="social-media-buttons">
+                    <h3>Community!</h3>
+                    <a href="https://instagram.com"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://youtube.com"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://github.com"><i class='bx bxl-github'></i></a>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <hr>
+        <hr>
+    </main>
+    <footer>
+        <h2>Studio 234 © 2021-2024</h2>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
