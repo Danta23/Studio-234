@@ -6,26 +6,28 @@ const highlightStyleLink = document.getElementById('highlight-style');
 const Enable_Lightmode = () => {
   document.body.classList.remove('Dark');
   document.body.classList.add('Light');
-  highlightStyleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css';
+  if (highlightStyleLink) {
+    highlightStyleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css';
+  }
   localStorage.setItem('Lightmode', 'Active');
 }
 
 const Disable_Lightmode = () => {
   document.body.classList.remove('Light');
   document.body.classList.add('Dark');
-  highlightStyleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark-dimmed.min.css';
+  if (highlightStyleLink) {
+    highlightStyleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark-dimmed.min.css';
+  }
   localStorage.setItem('Lightmode', null);
 }
 
 if (Lightmode === "Active") {
   icon.classList.remove('bx-sun');
   Enable_Lightmode();
-  highlightStyleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css';
   icon.classList.add('bxs-moon');
 }
 
 themeButton.addEventListener('click', () => {
-  // Ganti ikon berdasarkan tema saat ini
   Lightmode = localStorage.getItem('Lightmode');
   if (icon.classList.contains('bx-sun') || Lightmode !== "Active") {
     icon.classList.remove('bx-sun');
