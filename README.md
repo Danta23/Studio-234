@@ -4,6 +4,6 @@ Studio 234 is a studio that focuses on developing games and is made by Danta or 
 
 ## Community!
 
-- [Youtube]: https://www.youtube.com/@theriver234
-- [Instagram]: https://www.instagram.com/theriver234/
-- [Github]: https://github.com/Danta23
+- [Youtube](https://www.youtube.com/@theriver234)
+- [Instagram](https://www.instagram.com/theriver234/)
+- [Github](https://github.com/Danta23)
